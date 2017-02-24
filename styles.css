@@ -1,6 +1,327 @@
 body {
+  display: flex;
+  margin: 0;
+}
+
+/*TYPOGRAPHY*/
+h1, h2, h3, h4, h5, h6, p, a, button, input, table {
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   text-indent: -9999px;
+}
+
+h2 {
+
+}
+
+h3 {}
+
+h4 {
+  color: #a9b4c6;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 10px 10px 0;
+}
+
+h5 {}
+
+h6 {
+  color: #a9b4c6;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+p {}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*GLOBAL PSEUDO CLASSES*/
+a:hover {}
+
+button:hover {}
+
+.selected {}
+
+/*ELEMENTS*/
+.nav-aside {
+  background-color: #384456;
+  min-height: 100vh;
+  width: 15%;
+}
+
+.recruiter-block {
+  width: 100%;
+  border-bottom: 2px inset #262b2d;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.recruiter-image {
+  height: 100px;
+  width: 100px;
+  background: url(images/recruiter.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.recruiter-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.recruiter-block:hover .recruiter-name {
+  color: #ffffff;
+}
+
+.recruiter-dropdown {
+  background: url(images/recruiter-dropdown.svg) no-repeat;
+  background-size: cover;
+  height: 15px;
+  width: 20px;
+}
+
+.recruiter-block:hover .recruiter-dropdown {
+  background: url(images/recruiter-dropdown-hover.svg) no-repeat;
+  background-size: cover;
+}
+
+.nav-main {
+  max-width: 100%;
+  border-bottom: 2px inset #262b2d;
+  margin-top: 30px;
+  padding: 0 20px 20px 30px;
+}
+
+.nav-link {
+  color: #a9b4c6;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 375%;
+  text-transform: uppercase;
+}
+
+.nav-main-content {
+  display: flex;
+  align-items: center;
+}
+
+.nav-main-content:hover .nav-link {
+  color: #ffffff;
+}
+
+.nav-icon {
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+
+.icon-home {
+  background: url(images/aside-sprites.png) no-repeat 0 0;
+  background-size: cover;
+}
+
+.nav-home:hover .icon-home {
+  background: url(images/aside-sprites.png) no-repeat 0 -20px;
+  background-size: cover;
+}
+
+.icon-jobs {
+  background: url(images/aside-sprites.png) no-repeat 0 -40px;
+  background-size: cover;
+}
+
+.nav-jobs:hover .icon-jobs {
+  background: url(images/aside-sprites.png) no-repeat 0 -60px;
+  background-size: cover;
+}
+
+.icon-resumes {
+  background: url(images/aside-sprites.png) no-repeat 0 -80px;
+  background-size: cover;
+}
+
+.nav-resumes:hover .icon-resumes {
+  background: url(images/aside-sprites.png) no-repeat 0 -100px;
+  background-size: cover;
+}
+
+
+.icon-skills {
+  background: url(images/aside-sprites.png) no-repeat 0 -120px;
+  background-size: cover;
+}
+
+.nav-skills:hover .icon-skills {
+  background: url(images/aside-sprites.png) no-repeat 0 -140px;
+  background-size: cover;
+}
+
+
+.icon-calendar {
+  background: url(images/aside-sprites.png) no-repeat 0 -161px;
+  background-size: cover;
+}
+
+.nav-calendar:hover .icon-calendar {
+  background: url(images/aside-sprites.png) no-repeat 0 -181px;
+  background-size: cover;
+}
+
+.nav-admin {
+  max-width: 100%;
+  border-bottom: 2px solid #262b2d;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.nav-admin h4 {
+  margin-left: 30px;
+}
+
+.nav-admin-content {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.nav-admin-content:hover .nav-link {
+  color: #ffffff;
+}
+
+.icon-users {
+  background: url(images/aside-sprites.png) no-repeat 0 -205px;
+  background-size: cover;
+}
+
+.nav-users:hover .icon-users {
+  background: url(images/aside-sprites.png) no-repeat 0 -225px;
+  background-size: cover;
+}
+
+.icon-locations {
+  background: url(images/aside-sprites.png) no-repeat 0 -245px;
+  background-size: cover;
+}
+
+.nav-locations:hover .icon-locations {
+  background: url(images/aside-sprites.png) no-repeat 0 -265px;
+  background-size: cover;
+}
+
+.icon-archenemies {
+  background: url(images/aside-sprites.png) no-repeat 0 -285px;
+  background-size: cover;
+}
+
+.nav-archenemies:hover .icon-archenemies {
+  background: url(images/aside-sprites.png) no-repeat 0 -305px;
+  background-size: cover;
+}
+
+.nav-selected {
+  border-left: 5px solid #436da0;
+  width: 100%;
+}
+
+.nav-listings {
+  padding-left: 25px;
+}
+
+.nav-link-listings {
+  color: #ffffff;
+}
+
+.icon-listings {
+  background: url(images/aside-sprites.png) no-repeat 0 -348px;
+  background-size: cover;
+}
+
+.nav-listings:hover .icon-listings {
+  background: url(images/aside-sprites.png) no-repeat 0 -348px;
+  background-size: cover;
+}
+
+.icon-social {
+  background: url(images/aside-sprites.png) no-repeat 0 -367px;
+  background-size: cover;
+}
+
+.nav-social:hover .icon-social {
+  background: url(images/aside-sprites.png) no-repeat 0 -387px;
+  background-size: cover;
+}
+
+.nav-categories {
+  max-width: 100%;
+  margin-top: 30px;
+  padding: 0 20px 20px 30px;
+}
+
+.checkboxes {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxes:hover .nav-link {
+  color: #ffffff;
+}
+
+.box-icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.checked {
+  color: #ffffff;
+}
+
+.sidekicks {
+  background: url(images/checkbox-sprites.png) no-repeat 0 0;
+  background-size: cover;
+}
+
+.henchmen {
+  background: url(images/checkbox-sprites.png) no-repeat 0 -27px;
+  background-size: cover;
+}
+
+.goons {
+  background: url(images/checkbox-sprites.png) no-repeat 0 -55px;
+  background-size: cover;
+}
+
+.cannon-fodder {
+  background: url(images/checkbox-sprites.png) no-repeat 0 -80px;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+.main {
+  min-height: 100vh;
+  width: 85%;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+
 }
