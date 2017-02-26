@@ -50,8 +50,8 @@ h6 {
 
 p {
   font-size: 14px;
+  line-height: 145%;
   color: #6D6F70;
-  word-break: normal;
   margin: 0;
 }
 
@@ -594,8 +594,11 @@ button:hover {}
 }
 
 .this-tab {
+  display: inline-block;
   color: #354052;
   border-bottom: 4px solid #00C5ED;
+  margin-right: 50px;
+  padding-bottom: 20px;
 }
 
 .page-content {
@@ -767,6 +770,7 @@ td {
 
 .table-info {
   width: 60%;
+  line-height: 145%;
   font-weight: 300;
   color: #354052;
   padding-right: 30px;
@@ -889,7 +893,6 @@ td {
 .field-button {
   display: flex;
   justify-content: flex-start;
-  box-shadow: 0 0 10px #E6E9EF;
   margin: 15px 0;
 }
 
@@ -903,6 +906,7 @@ td {
   width: 65%;
   background-color: #ffffff;
   border-radius: 2px 0 0 2px;
+  box-shadow: 0 0 10px #E6E9EF;
   padding: 15px;
 }
 
@@ -940,30 +944,35 @@ td {
 
 
 
-
-
-
-
-
-
-
-
+/*MEDIA BREAKS*/
 @media screen and (max-width: 1360px) {
   .long-link {
     font-size: 12px;
   }
 }
 
+
+
 @media screen and (max-width: 1249px) {
   .long-link {
     font-size: 11px;
   }
+
+  .circle {
+    height: 120px;
+    width: 120px;
+  }
+
+  .graph {
+    height: 150px;
+    width: 300px;
+    background: url(images/graph.png) no-repeat;
+    background-size: cover;
+    margin: 20px;
+  }
 }
 
-
-
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1172px) {
   .nav-aside {
     display: none;
   }
@@ -972,4 +981,212 @@ td {
     max-width: 100%;
   }
 
+  .data-visualization {
+    flex-direction: column;
+  }
+
+  .circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .graph {
+    height: 25vw;
+    width: 50vw;
+    background: url(images/graph.png) no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+  }
+
+  .page-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    width: 90%;
+  }
+
+  .table-info {
+    padding-right: 100px;
+  }
+
+  .inner-aside {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .social {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .subscriptions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .subscription {
+    width: 90%;
+    padding: 0 0 30px 0;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  .page-info {
+    flex-direction: column;
+  }
+
+  .page-title-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+
+  .page-buttons {
+    margin: 0;
+  }
+
+  .page-tabs {
+    padding-left: 50px;
+  }
+
+  .tab {
+    display: none;
+  }
+
+  .table-info {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inner-aside {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links {
+    align-items: center;
+    width: 60%;
+  }
+
+  .subscriptions-container {
+    width: 60%;
+  }
+
+  .field-button {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .add-new,
+  .pulse-button,
+  .grid-button {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .data-circles {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .graph {
+    height: 40vw;
+    width: 80vw;
+    background: url(images/graph.png) no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+  }
+
+  .table-info {
+    padding-right: 0;
+  }
+
+  .social-links {
+    width: 90%;
+  }
+
+  .subscriptions-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table-hacky {
+    display: none;
+  }
+
+  .table-lead {
+    width: 90%;
+    border-bottom: none;
+    padding: 20px;
+  }
+
+  .table-info {
+    width: 90%;
+    margin: auto;
+    padding: 0 10px 20px 20px;
+  }
+
+  .copy {
+    width: 30%;
+  }
+
+  .subscription-field {
+    width: 50%;
+  }
+
+  .email-field-text {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 363px) {
+  .page-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .page-button {
+    margin: 10px;
+  }
+
+  .open-button {
+    flex-basis: 90%;
+  }
+
+  .sub-title {
+    font-size: 14px;
+  }
+
+  .telepathy-icon {
+    height: 15px;
+    width: 15px;
+    background: url(images/inner-aside-sprites.png) no-repeat 0 -34px;
+    background-size: cover;
+  }
 }
