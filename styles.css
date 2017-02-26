@@ -13,12 +13,17 @@ h1 {
 }
 
 h2 {
-  font-size: 26px;
+  color: #354052;
+  font-size: 34px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-h3 {}
+h3 {
+  color: #354052;
+  font-size: 36px;
+  margin: 0;
+}
 
 h4 {
   color: #a9b4c6;
@@ -38,33 +43,39 @@ h6 {
 
 p {
   font-size: 14px;
+  color: #6D6F70;
   margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: #6D6F70;
   font-size: 14px;
+  font-weight: 700;
 }
 
 /*PSEUDO CLASSES*/
-a:hover {}
+a:hover {
+  color: #000000;
+}
 
 button:hover {}
 
 .selected {}
 
 /*ELEMENTS*/
+/*NAV ASIDE CONTENT*/
 .nav-aside {
-  background-color: #384456;
+  background-color: #354052;
   min-height: 100vh;
   width: 15%;
 }
 
 .recruiter-block {
   width: 100%;
-  border-bottom: 2px inset #2d3849;
-  margin-top: 40px;
-  padding-bottom: 20px;
+  border-bottom: 2px solid #2d3849;
+  margin: 40px 0 0 0;
+  padding: 0 0 20px 0;
 }
 
 .recruiter-image {
@@ -100,17 +111,18 @@ button:hover {}
 
 .nav-main {
   max-width: 100%;
-  border-bottom: 2px inset #2d3849;
+  border-bottom: 2px solid #2d3849;
   margin-top: 30px;
   padding: 0 20px 20px 30px;
 }
 
 .nav-link {
   color: #a9b4c6;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 375%;
+  line-height: 300%;
   text-transform: uppercase;
+  margin: 0 0 0 15px;
 }
 
 .nav-main-content {
@@ -125,7 +137,6 @@ button:hover {}
 .nav-icon {
   height: 18px;
   width: 18px;
-  margin-right: 10px;
 }
 
 .icon-home {
@@ -158,7 +169,6 @@ button:hover {}
   background-size: cover;
 }
 
-
 .icon-skills {
   background: url(images/aside-sprites.png) no-repeat 0 -120px;
   background-size: cover;
@@ -168,7 +178,6 @@ button:hover {}
   background: url(images/aside-sprites.png) no-repeat 0 -140px;
   background-size: cover;
 }
-
 
 .icon-calendar {
   background: url(images/aside-sprites.png) no-repeat 0 -161px;
@@ -194,7 +203,7 @@ button:hover {}
 .nav-admin-content {
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 0 0 30px;
 }
 
 .nav-admin-content:hover .nav-link {
@@ -232,8 +241,8 @@ button:hover {}
 }
 
 .nav-selected {
-  border-left: 5px solid #436da0;
-  width: 100%;
+  background-color: #30394A;
+  border-left: 5px solid #00C5ED;
 }
 
 .nav-listings {
@@ -307,16 +316,24 @@ button:hover {}
 .cannon-fodder {
   background: url(images/checkbox-sprites.png) no-repeat 0 -80px;
   background-size: cover;
+  margin-right: 15px;
 }
 
+.long-link {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: clip;
+  margin: 0;
+  max-width: 90%;
+}
 
-/*MAIN*/
+/*MAIN CONTENT*/
 .main {
   min-height: 100vh;
-  width: 85%;
+  max-width: 85%;
 }
 
-/*Top nav bar*/
+/*TOP NAV CONTENT*/
 .top-nav {
   display: flex;
   width: 100%;
@@ -398,7 +415,7 @@ button:hover {}
 }
 
 .add-new:hover {
-  background-color: #4891F7;
+  background-color: #00C5ED;
 }
 
 .plus {
@@ -419,7 +436,7 @@ button:hover {}
 }
 
 .pulse-button:hover {
-  background-color: #4891F7;
+  background-color: #00C5ED;
 }
 
 .pulse {
@@ -441,7 +458,7 @@ button:hover {}
 }
 
 .grid-button:hover {
-  background-color: #4891F7;
+  background-color: #00C5ED;
 }
 
 .grid {
@@ -454,23 +471,23 @@ button:hover {}
   background-size: cover;
 }
 
-/*Page info*/
+/*PAGE INFO CONTENT*/
 .page-info {
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 10px;
   padding: 20px;
 }
 
 .page-title-contents {
-  width: 50%;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-bottom: 15px;
 }
 
 .location-info {
   display: flex;
-  align-items: center;
+  align-items: bottom;
 }
 
 .location-dark {
@@ -484,19 +501,24 @@ button:hover {}
 .location-link {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: #4891F7;
+  color: #00C5ED;
   margin-left: 5px;
 }
 
+.location-link:hover {
+  color: #AD3219;
+}
+
 .page-buttons {
-  width: 50%;
+  margin-right: 20px;
 }
 
 .page-button {
   border: 2px solid #c8cbd1;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: #ffffff;
-  padding: 5px;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .page-icon {
@@ -516,12 +538,16 @@ button:hover {}
   background-size: cover;
 }
 
+.open-button:hover .open-button-text {
+  color: #00C5ED;
+}
+
 .bookmark-icon {
   background: url(images/info-sprites.png) no-repeat 0 -22px;
   background-size: cover;
 }
 
-.bookmark-icon:hover {
+.bookmark-button:hover .bookmark-icon {
   background: url(images/info-sprites.png) no-repeat 0 -45px;
   background-size: cover;
 }
@@ -531,7 +557,7 @@ button:hover {}
   background-size: cover;
 }
 
-.edit-icon:hover {
+.edit-button:hover .edit-icon {
   background: url(images/info-sprites.png) no-repeat 0 -91px;
   background-size: cover;
 }
@@ -541,9 +567,87 @@ button:hover {}
   background-size: cover;
 }
 
-.delete-icon:hover {
+.delete-button:hover .delete-icon {
   background: url(images/info-sprites.png) no-repeat 0 -136px;
   background-size: cover;
+}
+
+/*PAGE TABS CONTENT*/
+.page-tabs {
+  border-bottom: 3px solid #e6e9ef;
+  padding-left: 50px;
+}
+
+.tab {
+  display: inline-block;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+
+.this-tab {
+  color: #354052;
+  border-bottom: 4px solid #00C5ED;
+}
+
+.page-content {
+background-color: #EDF2F6;
+}
+
+/*DATA VISUALIZATION*/
+.data-visualization {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 300px;
+  padding: 30px 0 30px 0;
+}
+
+.data-and-button {
+  text-align: center;
+}
+
+.data-circles {
+  display: flex;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.first {
+  border: 10px solid #F7C350;
+  border-bottom: 10px solid #C8CBD1
+}
+
+.second {
+  border: 10px solid #68D152;
+  border-bottom: 10px solid #C8CBD1
+}
+
+.third {
+  border: 10px solid #00C5ED;
+  border-bottom: 10px solid #C8CBD1
+}
+
+.data-graph {
+
+}
+
+.graph {
+  height: 200px;
+  width: 400px;
+  background: url(images/graph.png) no-repeat;
+  background-size: cover;
+  margin: 20px;
 }
 
 
@@ -557,7 +661,28 @@ button:hover {}
 
 
 
+@media screen and (max-width: 1360px) {
+  .long-link {
+    font-size: 12px;
+  }
+}
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 1249px) {
+  .long-link {
+    font-size: 11px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .nav-aside {
+    display: none;
+  }
+
+  .main {
+    max-width: 100%;
+  }
 
 }
