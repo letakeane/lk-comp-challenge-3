@@ -62,14 +62,9 @@ a {
   font-weight: 700;
 }
 
-/*PSEUDO CLASSES*/
 a:hover {
   color: #354052;
 }
-
-button:hover {}
-
-.selected {}
 
 /*ELEMENTS*/
 /*NAV ASIDE CONTENT*/
@@ -78,6 +73,7 @@ button:hover {}
   width: 15%;
 }
 
+/*RECRUITER BLOCK CONTENT*/
 .recruiter-block {
   width: 100%;
   border-bottom: 2px solid #2d3849;
@@ -116,6 +112,7 @@ button:hover {}
   background-size: cover;
 }
 
+/*NAV MAIN CONTENT*/
 .nav-main {
   max-width: 100%;
   border-bottom: 2px solid #2d3849;
@@ -196,6 +193,8 @@ button:hover {}
   background-size: cover;
 }
 
+
+/*NAV ADMIN CONTENT*/
 .nav-admin {
   max-width: 100%;
   border-bottom: 2px solid #2d3849;
@@ -280,6 +279,8 @@ button:hover {}
   background-size: cover;
 }
 
+
+/*NAV CATEGORIES CONTENT*/
 .nav-categories {
   max-width: 100%;
   margin-top: 30px;
