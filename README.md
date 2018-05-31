@@ -17,18 +17,18 @@ Below are a series of my version, which I themed as a site on which users can sh
 ------------
 
 ##### Large screen view:
-![my version, widescreen view]('./images/READMEimages/narrow desktop.png')
+![my version, widescreen view](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/narrow%20desktop.png)
 
 ##### Tablet-ish views:
-![my version, tablet view top]('./images/READMEimages/tablet top.png')
-![my version, tablet view bottom](./images/READMEimages/tablet bottom.png)
+![my version, tablet view top](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/tablet%20top.png)
+![my version, tablet view bottom](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/tablet%20bottom.png)
 
 ##### Phablet-ish views:
-![my version, phablet view top](./images/READMEimages/phablet top.png)
-![my version, phablet view middle](./images/READMEimages/phablet middle.png)
-![my version, phablet view bottom](./images/READMEimages/phablet bottom.png)
+![my version, phablet view top](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/phablet%20top.png)
+![my version, phablet view middle](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/phablet%20middle.png)
+![my version, phablet view bottom](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/phablet%20bottom.png)
 
 ##### Narrow phone views:
-![my version, phone view top](./images/READMEimages/phone top.png)  
-![my version, phone view middle](./images/READMEimages/phone middle.png)  
-![my version, phone view bottom](./images/READMEimages/phone bottom.png)
+![my version, phone view top](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/phone%20top.png)  
+![my version, phone view middle](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/phone%20middle.png)  
+![my version, phone view bottom](https://github.com/letakeane/lk-comp-challenge-3/blob/master/images/READMEimages/phone%20bottom.png)
